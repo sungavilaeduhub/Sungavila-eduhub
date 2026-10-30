@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="SUNGAVILA EDUHUB — Sri Lankan O/L, A/L and GIT learning resources.">
+  <title>SUNGAVILA EDUHUB | Learn. Revise. Succeed.</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#home" aria-label="SUNGAVILA EDUHUB home">
+      <span class="brand-mark">SE</span>
+      <span><strong>SUNGAVILA</strong><small>EDUHUB</small></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+    <nav id="mainNav">
+      <a href="#home">Home</a><a href="#ol">O/L</a><a href="#al">A/L</a><a href="#git">GIT</a><a href="#about">About</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <div class="eyebrow">YOUR LEARNING JOURNEY STARTS HERE</div>
+        <h1>Learn better.<br><span>Achieve more.</span></h1>
+        <p class="hero-copy">A student-friendly hub for Sri Lankan school resources — past papers, marking schemes, notes and more.</p>
+        <div class="hero-actions"><a class="button primary" href="#resources">Explore resources <span>→</span></a><a class="button secondary" href="#al">Explore A/L streams</a></div>
+        <div class="hero-stats"><div><b>O/L</b><span>Exam resources</span></div><div><b>A/L</b><span>All streams</span></div><div><b>GIT</b><span>Study support</span></div></div>
+      </div>
+      <div class="hero-art" aria-label="Education illustration">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="book-card"><div class="book-icon">▤</div><h3>Learn at your pace</h3><p>Collect your study resources in one place.</p><div class="mini-lines"><i></i><i></i><i></i></div></div>
+        <div class="float-chip chip-one">📘 Past papers</div><div class="float-chip chip-two">✦ Study smarter</div><div class="float-chip chip-three">✓ Keep progressing</div>
+      </div>
+    </section>
+
+    <section class="search-section" id="resources">
+      <div><p class="eyebrow">FIND WHAT YOU NEED</p><h2>Search study resources</h2><p class="muted">Search by subject, resource type, medium or year.</p></div>
+      <div class="search-box"><span>⌕</span><input id="searchInput" type="search" placeholder="Try “Biology”, “Grade 11”, “GIT”…" aria-label="Search resources"><button id="clearSearch" aria-label="Clear search">✕</button></div>
+      <p class="search-hint" id="searchStatus">Choose a category below to explore resources.</p>
+    </section>
+
+    <section class="section" id="ol">
+      <div class="section-heading"><div><p class="eyebrow">GRADE 10–11</p><h2>Ordinary Level <span class="heading-accent">(O/L)</span></h2><p class="muted">Build your foundation and prepare with confidence.</p></div><span class="section-number">01</span></div>
+      <div class="resource-grid">
+        <a class="resource-card searchable" href="#resource-list" data-search="ol ordinary level past papers question papers years tamil english sinhala"><span class="card-icon blue">▤</span><h3>Past Papers</h3><p>Practice with previous examination papers.</p><span class="card-link">Explore <b>↗</b></span></a>
+        <a class="resource-card searchable" href="#resource-list" data-search="ol ordinary level marking schemes answers"><span class="card-icon purple">✓</span><h3>Marking Schemes</h3><p>Review answers and understand marking.</p><span class="card-link">Explore <b>↗</b></span></a>
+        <a class="resource-card searchable" href="#resource-list" data-search="ol ordinary level resource books textbooks syllabus"><span class="card-icon cyan">▣</span><h3>Resource Books</h3><p>Study material organised by subject.</p><span class="card-link">Explore <b>↗</b></span></a>
+        <a class="resource-card searchable" href="#resource-list" data-search="ol ordinary level short notes revision summaries"><span class="card-icon yellow">✎</span><h3>Short Notes</h3><p>Quick revision notes for key topics.</p><span class="card-link">Explore <b>↗</b></span></a>
+      </div>
+    </section>
+
+    <section class="section al-section" id="al">
+      <div class="section-heading"><div><p class="eyebrow">GRADE 12–13</p><h2>Advanced Level <span class="heading-accent">(A/L)</span></h2><p class="muted">All main streams, with subject-wise resource areas.</p></div><span class="section-number">02</span></div>
+      <div class="stream-grid">
+        <article class="stream-card searchable" data-search="biology biological science chemistry physics bio stream">
+          <div class="stream-top"><span class="stream-icon">🧬</span><span class="stream-label">STREAM 01</span></div><h3>Biological Science</h3><p>Biology · Chemistry · Physics</p><div class="subject-pills"><span>Biology</span><span>Chemistry</span><span>Physics</span></div><a href="#resource-list" class="stream-link">View resources <b>→</b></a>
+        </article>
+        <article class="stream-card searchable" data-search="physical science combined mathematics maths physics chemistry">
+          <div class="stream-top"><span class="stream-icon">⚛️</span><span class="stream-label">STREAM 02</span></div><h3>Physical Science</h3><p>Combined Mathematics · Physics · Chemistry</p><div class="subject-pills"><span>Combined Maths</span><span>Physics</span><span>Chemistry</span></div><a href="#resource-list" class="stream-link">View resources <b>→</b></a>
+        </article>
+        <article class="stream-card searchable" data-search="commerce accounting business studies economics commerce stream">
+          <div class="stream-top"><span class="stream-icon">📊</span><span class="stream-label">STREAM 03</span></div><h3>Commerce</h3><p>Accounting · Business Studies · Economics</p><div class="subject-pills"><span>Accounting</span><span>Business</span><span>Economics</span></div><a href="#resource-list" class="stream-link">View resources <b>→</b></a>
+        </article>
+        <article class="stream-card searchable" data-search="arts humanities languages history geography political science logic media">
+          <div class="stream-top"><span class="stream-icon">🌏</span><span class="stream-label">STREAM 04</span></div><h3>Arts</h3><p>Humanities, languages and social sciences</p><div class="subject-pills"><span>History</span><span>Geography</span><span>Languages + more</span></div><a href="#resource-list" class="stream-link">View resources <b>→</b></a>
+        </article>
+        <article class="stream-card searchable" data-search="technology engineering technology science for technology information communication technology ict">
+          <div class="stream-top"><span class="stream-icon">💻</span><span class="stream-label">STREAM 05</span></div><h3>Technology</h3><p>Engineering Technology · Science for Technology · ICT</p><div class="subject-pills"><span>ET</span><span>SFT</span><span>ICT</span></div><a href="#resource-list" class="stream-link">View resources <b>→</b></a>
+        </article>
+      </div>
+      <div class="notice"><span>ℹ</span><p><b>Subject availability:</b> A/L subjects and combinations can vary by school and current syllabus. We’ll organise the resources to match the Sri Lankan syllabus and add subjects as resources become available.</p></div>
+    </section>
+
+    <section class="section git-section" id="git">
+      <div class="git-banner"><div class="git-symbol">GIT</div><div><p class="eyebrow">GENERAL INFORMATION TECHNOLOGY</p><h2>GIT Study Corner</h2><p>Prepare with papers, notes, resource books and model questions.</p></div><a class="button light-button" href="#resource-list">Explore GIT <span>→</span></a></div>
+      <div class="resource-grid git-grid">
+        <a class="resource-card searchable" href="#resource-list" data-search="git past papers"><span class="card-icon blue">▤</span><h3>Past Papers</h3><p>Practise exam-style questions.</p><span class="card-link">Explore <b>↗</b></span></a>
+        <a class="resource-card searchable" href="#resource-list" data-search="git resource books notes"><span class="card-icon cyan">▣</span><h3>Resource Books</h3><p>Learn key concepts step by step.</p><span class="card-link">Explore <b>↗</b></span></a>
+        <a class="resource-card searchable" href="#resource-list" data-search="git model papers revision"><span class="card-icon yellow">✎</span><h3>Model Papers</h3><p>Test your knowledge before the exam.</p><span class="card-link">Explore <b>↗</b></span></a>
+      </div>
+    </section>
+
+    <section class="section resource-list-section" id="resource-list">
+      <div class="section-heading"><div><p class="eyebrow">RESOURCE LIBRARY</p><h2>Available resources</h2><p class="muted">This starter website is ready for your real PDF links.</p></div></div>
+      <div class="resource-placeholder" id="resourcePlaceholder"><div class="placeholder-icon">📂</div><h3>Your resource library starts here</h3><p>Past papers, PDFs and notes will appear here when you add their links. The cards above currently help students navigate the website categories.</p><span class="status-pill">Ready to add resources</span></div>
+      <p class="no-results" id="noResults" hidden>No matching categories found. Try another keyword.</p>
+    </section>
+
+    <section class="about-section" id="about"><div class="about-mark">SE</div><div><p class="eyebrow">MADE FOR LEARNERS</p><h2>One hub. More opportunities.</h2><p>SUNGAVILA EDUHUB aims to make Sri Lankan school learning resources easier to find and use. Resources will be added progressively.</p></div><a class="button secondary" href="#home">Back to top ↑</a></section>
+  </main>
+
+  <footer><a class="footer-brand" href="#home">SUNGAVILA EDUHUB</a><span>Learn · Revise · Succeed</span><small>© <span id="year"></span> SUNGAVILA EDUHUB. Educational resource portal.</small></footer>
+  <script src="script.js"></script>
+</body>
+</html>
